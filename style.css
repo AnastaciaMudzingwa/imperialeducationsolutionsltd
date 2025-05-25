@@ -250,10 +250,36 @@ button{
 button:hover{
     background-color: black;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    header h1 {
+        min-width: auto;
+        text-align: left;
+    }
+    
+    .sidebar {
+        width: 30%;
+    }
+    
+    .home-content, .program-content {
+        width: 65%;
+        margin-left: 5%;
+    }
+    
+    .aboutus-content {
+        width: 70%;
+    }
+    
+    table {
+        font-size: 1rem;
+        display: table;
+    }
+}
+
+/* Smartphone Layout (480px and below) */
+@media screen and (max-width: 480px) {
     header {
         flex-direction: column;
-        padding: 15px;
+        text-align: center;
     }
     
     nav ul {
@@ -262,48 +288,31 @@ button:hover{
     }
     
     nav ul li {
-        margin: 8px 0;
+        margin: 5px 0;
     }
     
     .hero {
-        height: 35vh;
-    }
-    
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-    
-    .hero p {
-        font-size: 1.1rem;
+        min-height: 30vh;
+        padding: 1rem;
     }
     
     .container, .aboutus-container {
-        flex-direction: column;
+        padding: 0.5rem;
     }
     
     .sidebar, .home-content, .aboutus-content, .program-content {
-        width: 100%;
+        padding: 0.8rem;
     }
-     img{
-        max-width: 100%;
-        height: auto;
+    
+    h2 {
+        font-size: 1.3rem;
     }
 }
 
-/* Smartphone Layout (480px and below) */
-@media screen and (max-width: 480px) {
-    header .logo img {
-        height: 60px;
-        width: 60px;
-    }
-    
-    header h1 {
-        font-size: 1.3rem;
-    }
-    
-    .hero {
-        height: 30vh;
-        padding: 0 15px;
+/* Prevent content overlap */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 14px;
     }
     
     .hero h1 {
@@ -313,35 +322,12 @@ button:hover{
     .hero p {
         font-size: 1rem;
     }
-    
-    .container, .aboutus-container {
-        padding: 10px;
-    }
-    
-    /* Forms */
-    .feedback-container, .application-form {
-        width: 100%;
-        padding: 15px;
-    }
-    
-    form {
-        width: 100%;
-    }
-    
-    /* Tables */
-    table {
-        width: 100%;
-        font-size: 14px;
-    }
-    
-    th, td {
-        padding: 8px;
-    }
-     img{
-        max-width: 100%;
-        height: auto;
-    }
 }
+
+
+    
+ 
+   
 
 
 
