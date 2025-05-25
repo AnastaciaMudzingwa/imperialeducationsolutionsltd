@@ -250,51 +250,90 @@ button{
 button:hover{
     background-color: black;
 }
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
-    }
-    
-    .about-container,
-    .sidebar {
-        width: 100%;
-        padding: 15px;
-    }
-    
-    .about-content {
-        order: -1;
-    }
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    text-align: left;
+  }
+
+  .logo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    margin: 0 20px;
+    flex-grow: 1;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0 15px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .container, .aboutus-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .content-area {
+    width: 70%;
+  }
+
+  /* Specific content areas */
+  .home-content { width: 70%; }
+  .aboutus-content { width: 70%; }
+  .program-content { width: 70%; }
 }
 
-/* Smartphone Layout (480px and below) */
-@media screen and (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-    
-    .about-container {
-        flex-direction: column;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+/* SMARTPHONE LANDSCAPE ORIENTATION (481px to 767px) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    height: 250px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 }
 
-      
+
+
   
   
     
