@@ -250,87 +250,91 @@ button{
 button:hover{
     background-color: black;
 }
-@media screen and (min-width: 768px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    text-align: left;
-  }
-
-  .logo img {
-    height: 80px;
-    width: 80px;
-  }
-
-  header h1 {
-    font-size: 1.6rem;
-    margin: 0 20px;
-    flex-grow: 1;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-  nav li {
-    margin: 0 15px;
-  }
-
-  nav a {
-    font-size: 1rem;
-  }
-
-  .hero {
-    height: 300px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1.3rem;
-  }
-
-  .container, .aboutus-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .sidebar {
-    width: 30%;
-    margin-right: 20px;
-  }
-
-  .content-area {
-    width: 70%;
-  }
-
-  /* Specific content areas */
-  .home-content { width: 70%; }
-  .aboutus-content { width: 70%; }
-  .program-content { width: 70%; }
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 8px 0;
+    }
+    
+    .hero {
+        height: 35vh;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .container, .aboutus-container {
+        flex-direction: column;
+    }
+    
+    .sidebar, .home-content, .aboutus-content, .program-content {
+        width: 100%;
+    }
 }
 
-/* SMARTPHONE LANDSCAPE ORIENTATION (481px to 767px) */
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .hero {
-    height: 250px;
-  }
-  
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
+/* Smartphone Layout (480px and below) */
+@media screen and (max-width: 480px) {
+    header .logo img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero {
+        height: 30vh;
+        padding: 0 15px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .container, .aboutus-container {
+        padding: 10px;
+    }
+    
+    /* Forms */
+    .feedback-container, .application-form {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    /* Tables */
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
 }
+
 
 
 
