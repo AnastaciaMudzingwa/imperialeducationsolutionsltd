@@ -284,6 +284,10 @@ button:hover{
     .sidebar, .home-content, .aboutus-content, .program-content {
         width: 100%;
     }
+     img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* Smartphone Layout (480px and below) */
@@ -332,6 +336,10 @@ button:hover{
     
     th, td {
         padding: 8px;
+    }
+     img{
+        max-width: 100%;
+        height: auto;
     }
 }
 
